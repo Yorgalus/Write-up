@@ -1,0 +1,7 @@
+ldapsearch -x -H ldap://challenge01.root-me.org:54013 -b "ou=anonymous,dc=challenge01,dc=root-me,dc=org"
+
+-x pour l'auth simplifié sans mot de passe car bind auth est activé
+-H l'host ou il y a le srv ldap
+-b ""l'object dans l'ad"" l'OU (unité d'organisation) anonymous qui est la seul à être dispo en mode auth sans mdp. + les info
+
+sabu@anonops.org
