@@ -25,7 +25,7 @@ Bon, ça ne parle pas tout de suite, mais c’est là que la magie de Javascript
 ## **Étape 2 : Décryptage niveau 1 - Les chiffres**  
 1. **Action :** Ouvrir la console (F12 > Onglet Console).  
 2. **Commande à taper :**  
-   ```javascript
+```
    alert('\x35\x35\x2c\x35\x36\x2c\x35\x34\x2c\x37\x39\x2c\x31\x31\x35\x2c\x36\x39\x2c\x31\x31\x34\x2c\x31\x31\x36\x2c\x31\x30\x37\x2c\x34\x39\x2c\x35\x30')
 ```
 
@@ -37,9 +37,9 @@ On avance dans notre quête du Graal. ⚔️
 
 ## **Étape 3 : Décryptage niveau 2 - Le trésor dévoilé**  
 1. **Action :** Toujours dans la console, entrez la commande suivante :  
-   ```javascript
+```
    alert(String.fromCharCode(55,56,54,79,115,69,114,116,107,49,50))
-
+```
 ### **Résultat : Le mot de passe enfin révélé**  
 Une pop-up surgit, dévoilant le **mot de passe magique** tant attendu :  
 🏅 **Mot de passe :** `786Osertk12`
