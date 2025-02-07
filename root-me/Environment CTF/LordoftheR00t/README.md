@@ -1,4 +1,4 @@
-# Lord of the Root
+# Lord of the Root 🧙‍♂️
 
 ## Description
 Partez à la recherche du précieux en élevant vos privilèges.
