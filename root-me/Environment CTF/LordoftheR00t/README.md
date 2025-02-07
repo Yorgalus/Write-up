@@ -149,6 +149,7 @@ Une fois connecté apres beaucoup de recherche je constate que MySQL tourne en r
 ## Étape 5 : Exploitation du MySQL
 
 MySQL, lorsqu'il tourne avec des privilèges root, peut être exploité pour exécuter du code arbitraire en injectant une bibliothèque malveillante. Ici, j'utilise une vieille faille bien connue sur les forums paumé concernant une **User-Defined Function (UDF)** malveillante nommée `raptor_udf2.c`.
+![Page Initiale](11.png "Premier screen")
 
 ### 1. Compilation de la bibliothèque malveillante  
 L'objectif est de créer une bibliothèque dynamique que MySQL pourra charger et exécuter comme une fonction système. Pour cela, on compile `raptor_udf2.c` :
@@ -166,7 +167,7 @@ gcc -g -shared -o raptor_udf2.so raptor_udf2.o -lc
 
 ### 2. Injection de la bibliothèque dans MySQL  
 Une fois la bibliothèque compilée, je l’injecte dans la base de données pour l'utiliser en tant que fonction :
-
+![Page Initiale](12.png "Premier screen")
 ```
 mysql> use mysql;
 mysql> create table foo(line blob);
