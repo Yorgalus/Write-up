@@ -33,7 +33,7 @@ Dans le fichier, un commentaire du développeur révèle le flag :
 // Did you know that comments are readable by the end user ? 
 // Well, this because I build the application with the source maps enabled !!! 
 // So please, disable source map when you build for production 
-// Here is your flag : Flag{Webpack_Exposed_Flag}
+// Here is your flag : Flag{{FLAG CACHE}}
 ```
 
 ---
