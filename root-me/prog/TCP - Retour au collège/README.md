@@ -89,7 +89,7 @@ Calculate the square root of 543 and multiply by 2148 =
 Nombre 1 (racine): 543.0, Nombre 2 (multiplicateur): 2148.0
 Résultat calculé : 50053.47
 Réponse envoyée: 50053.47
-Réponse du serveur: [+] Good job ! Here is your flag: RM{TCP_C0nnecT_4nD_m4Th}
+Réponse du serveur: [+] Good job ! Here is your flag: RM{[FLAG CACHÉ]}
 ``` 
 
 ## **Conclusion**
