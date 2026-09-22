@@ -75,7 +75,7 @@ Injection utilisée :
 ```
 ; cat .passwd  
 ```
-![Page Finale](4.png "Dernier screen") 
+
 
 #### Résultats :
 flag{[FLAG CACHÉ]}
