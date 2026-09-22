@@ -40,9 +40,9 @@ Authorization: Basic Y29uZmk6ZGVudGlhbA==
 ## **Étape 4 : Décodage de la chaîne Base64**  
 - La chaîne **Y29uZmk6ZGVudGlhbA==** correspond à la valeur codée en **Base64**, que l’on peut décoder pour obtenir :  
 ```
-flag{confi:dential}
+flag{[FLAG CACHÉ]}
 ```
-- Le mot de passe est donc **"confi:dential"**.
+- Le mot de passe est donc **"[FLAG CACHÉ]"**.
 
 ---
 
