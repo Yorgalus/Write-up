@@ -36,19 +36,19 @@ Récupérer les informations d'authentification (login et mot de passe) pour val
 
 ## **Observation**  
 Le pseudo et le mot de passe sont directement définis dans le code :  
-- **Pseudo :** `4dm1n`  
-- **Mot de passe :** `sh.org`  
+- **Pseudo :** `[FLAG CACHÉ]`  
+- **Mot de passe :** `[FLAG CACHÉ]`  
 
 ![Page Initiale](3.png "Premier screen") 
 
 ---
 
 ## **Étape 4 : Connexion et récupération du flag**  
-- Nous utilisons les informations d'identification découvertes (`4dm1n` pour le pseudo et `sh.org` pour le mot de passe) pour nous connecter.  
+- Nous utilisons les informations d'identification découvertes (`[FLAG CACHÉ]` pour le pseudo et `[FLAG CACHÉ]` pour le mot de passe) pour nous connecter.  
 - Le flag apparaît lorsque la connexion est réussie.  
 - **Flag affiché :**  
 ```
-flag{sh.org}
+flag{[FLAG CACHÉ]}
 ```
 
 ## **Résultats**  
