@@ -30,7 +30,7 @@ ftp
   ```  
 - Ensuite, repérez la requête où le mot de passe est transmis en clair :  
   ```
-  11  7.639420  10.20.144.150  10.20.144.151  FTP  81  Request : PASS cdts3500
+  [FLAG CACHÉ]
   ```  
 
 ---
@@ -38,7 +38,7 @@ ftp
 ### **Résultat : Le mot de passe trouvé**  
 Le mot de passe est :  
 ```
-cdts3500
+[FLAG CACHÉ]
 ```
 
 ---
