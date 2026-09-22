@@ -32,14 +32,14 @@ Récupérer les informations d'authentification en utilisant la console JavaScri
 ## **Lecture du code source**  
 - Le code source de la fonction `connexion()` contient la déclaration des identifiants dans un tableau :  
   ```javascript
-  var TheLists = ["GOD:HIDDEN"];
+  var TheLists = ["[FLAG CACHÉ]"];
 
 ---
 
 ## **Étape 3 : Lecture du code source JavaScript**  
 - En décomposant la chaîne, nous obtenons les informations suivantes :  
-  - **Username :** `GOD`  
-  - **Password :** `HIDDEN`  
+  - **Username :** `[FLAG CACHÉ]`  
+  - **Password :** `[FLAG CACHÉ]`  
 
 ---
 
@@ -48,7 +48,7 @@ Récupérer les informations d'authentification en utilisant la console JavaScri
 - Le flag apparaît lorsque la connexion est réussie.  
 - **Flag affiché :**  
   ```text
-  flag{GODHIDDEN}
+  flag{[FLAG CACHÉ]}
 ## **Résultats**  
 - **Vulnérabilité exploitée :** Exposition d'informations sensibles (username et password) dans le code JavaScript accessible via la console du navigateur.  
 
