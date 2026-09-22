@@ -35,7 +35,7 @@ Contourner la désactivation des boutons pour obtenir le flag.
 - **Vulnérabilité exploitée :** Contournement de l'attribut `disabled` dans l'HTML.  
 - **Flag obtenu :**  
 ```
-flag{HTMLCantStopYou}
+flag{[FLAG CACHÉ]}
 ```
 
 ![Page flag](4.png "Dernier screen") 
