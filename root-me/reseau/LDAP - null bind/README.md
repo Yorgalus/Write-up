@@ -46,16 +46,14 @@ $ ldapsearch -x -h challenge01.root-me.org -p 54013 -b "ou=anonymous,dc=challeng
 ```
 - **Résultat :** La recherche retourne un utilisateur "sabu" avec l'email suivant :  
 ```
-mail: sabu@anonops.org
-```
+[FLAG CACHÉ]```
 
 ---
 
 ## **Étape 5 : Flag obtenu**  
 - **Flag :**  
 ```
-sabu@anonops.org
-```
+[FLAG CACHÉ]```
 ---
 
 ## **Conclusion**  
