@@ -21,7 +21,7 @@ Décoder une chaîne encodée en hexadécimal ASCII pour récupérer le flag.
 1. Se rendre sur [dcode.fr/ascii](http://www.dcode.fr/ascii).  
 2. Copier la chaîne hexadécimale fournie :  
 ```
-2ac376481ae546cd689d5b91275d324e
+[FLAG CACHÉ]
 ```
 3. La coller dans l'outil de décodage ASCII.
 
@@ -30,11 +30,11 @@ Décoder une chaîne encodée en hexadécimal ASCII pour récupérer le flag.
 ## **Étape 3 : Décodage**  
 - **Résultat obtenu :**  
 ```
-2ac376481ae546cd689d5b91275d324e
+[FLAG CACHÉ]
 ```
 - **Flag obtenu :**  
 ```
-2ac376481ae546cd689d5b91275d324e
+[FLAG CACHÉ]
 ```
 
 ---
