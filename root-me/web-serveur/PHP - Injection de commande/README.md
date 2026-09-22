@@ -78,7 +78,7 @@ Injection utilisée :
 ![Page Finale](4.png "Dernier screen") 
 
 #### Résultats :
-flag{S3rv1ceP1n9Sup3rS3cure}
+flag{[FLAG CACHÉ]}
 
 #### Conclusion :
 Le challenge repose sur une injection de commande via un formulaire PHP non sécurisé. Une analyse du code source a permis de confirmer la vulnérabilité et d'accéder au fichier .passwd contenant le flag.
