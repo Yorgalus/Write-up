@@ -53,7 +53,7 @@ var pass = unescape("unescape("String.fromCharCode(104,68,117,102,106,100,107,10
 ## **Étape 3 : Validation**  
 - **Mot de passe obtenu :**  
 ```
-hDufjdki156
+{FLAG CACHE}
 ```
 
 ---
