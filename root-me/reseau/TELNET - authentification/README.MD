@@ -21,16 +21,16 @@
 ## **Étape 4 : Repérer le mot de passe**  
 - À moins d’être aveugle, vous devriez repérer **le mot de passe** de l’utilisateur dans la capture, affiché sous cette forme :  
 ```
-Password=user
+Password=[FLAG CACHÉ]
 ```
-- Voilà, le mot de passe de l’utilisateur est **"user"** ! Testez-le, et vous verrez que l’épreuve est validée. ✔️  
+- Voilà, le mot de passe de l’utilisateur est **"[FLAG CACHÉ]"** ! Testez-le, et vous verrez que l’épreuve est validée. ✔️  
 
 ---
 
 ## **Flag du challenge**  
 Le flag du challenge est :  
 ```
-flag{user}
+flag{[FLAG CACHÉ]}
 ```
 
 
