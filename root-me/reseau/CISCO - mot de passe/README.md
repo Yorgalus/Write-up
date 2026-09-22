@@ -60,8 +60,8 @@ $1$p8Y6$MCdRLBzuGlfOs9S.hXOp0.
 ---
 
 ## **Étape 5 : Mot de passe trouvé**  
-- **Mot de passe :** `6sK0_enable`  
-- **Conclusion :** Le mot de passe "enable" utilise le format "6sK0_" + nom d'utilisateur, et en vérifiant le hachage MD5, nous avons confirmé que le mot de passe est bien **6sK0_enable**.
+- **Mot de passe :** `[FLAG CACHÉ]`  
+- **Conclusion :** Le mot de passe "enable" utilise le format "6sK0_" + nom d'utilisateur, et en vérifiant le hachage MD5, nous avons confirmé que le mot de passe est bien **[FLAG CACHÉ]**.
 
 --- 
 
