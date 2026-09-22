@@ -29,7 +29,7 @@ Trouver le mot de passe en clair dans le script JavaScript pour valider le chall
 4. Le code suivant apparaît avec le mot de passe directement en clair :  
 
 ```
-a=prompt('Entrez le mot de passe'); if(a=='toto123lol'){ alert('bravo'); } else { alert('fail...'); }
+a=prompt('Entrez le mot de passe'); if(a=='[FLAG CACHÉ]'){ alert('bravo'); } else { alert('fail...'); }
 ```
 
 ---
@@ -37,7 +37,7 @@ a=prompt('Entrez le mot de passe'); if(a=='toto123lol'){ alert('bravo'); } else 
 ## **Étape 3 : Validation**  
 - **Mot de passe obtenu :**  
 ```
-toto123lol
+[FLAG CACHÉ]
 ```
 - **Action :** Entrer ce mot de passe dans la boîte de dialogue.  
 - **Résultat :** Un message de validation s'affiche avec l'alerte **"bravo"**.  
