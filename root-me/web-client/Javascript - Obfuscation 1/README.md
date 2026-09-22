@@ -24,7 +24,7 @@ Déchiffrer une chaîne de caractères obfusquée pour obtenir le flag ou le mot
 ## **Étape 2 : Déchiffrement**  
 - **Action :** Copier la chaîne HEX et utiliser un convertisseur en ligne HEX vers ASCII.  
 - **Résultat :** La chaîne traduite donne :  
-cpasbiendurpassword
+[FLAG CACHÉ]
 
 ---
 
