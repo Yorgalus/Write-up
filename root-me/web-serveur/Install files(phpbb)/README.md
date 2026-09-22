@@ -33,11 +33,11 @@ Résultat : arrivée sur une page listant des fichiers, notamment install.php.
 
 Action : ouverture du fichier install.php.
 Résultat : le flag est visible dans la page.
-![Page Flag](4.png "Dernier screen") 
+
 
 #### Résultats
 Flag trouvé : (Screen joint du flag)
-Mot de passe : karambar
+Mot de passe : [FLAG CACHÉ]
 
 #### Conclusion
 Le challenge a été résolu en utilisant une approche méthodique basée sur les indices de la consigne et des tests successifs d'extensions de liens.
