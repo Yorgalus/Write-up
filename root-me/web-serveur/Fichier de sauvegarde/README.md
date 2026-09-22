@@ -35,7 +35,7 @@ Explorer les fichiers générés automatiquement et trouver un fichier de sauveg
 
 - **Screen associé :** ![Page burp](2.png "Deuxieme screen") 
 ```
-flag{OCCY9AcNm1tj}
+flag{[FLAG CACHÉ]}
 ```
 ## **Conclusion**  
 Ce challenge met en évidence l'importance de sécuriser les fichiers générés automatiquement, notamment ceux associés aux versions précédentes ou aux sauvegardes. Ces fichiers peuvent contenir des informations sensibles ou permettre d'obtenir un accès non autorisé si l'URL est manipulée correctement. 
