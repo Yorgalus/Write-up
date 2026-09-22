@@ -34,7 +34,7 @@ Bienvennue dans ce challenge de cracking
 ## **Étape 3 : Identification du flag**  
 - **Mot de passe trouvé :**  
 ```
-987654321
+[FLAG CACHÉ]
 ```
 
 ---
