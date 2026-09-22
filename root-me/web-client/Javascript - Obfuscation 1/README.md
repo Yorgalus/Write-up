@@ -15,7 +15,7 @@ Déchiffrer une chaîne de caractères obfusquée pour obtenir le flag ou le mot
 - La page contient une chaîne de caractères obfusquée en HEX :  
 
 ```
-%63%70%61%73%62%69%65%6e%64%75%72%70%61%73%73%77%6f%72%64
+[FLAG CACHÉ]
 ```
 - **Screen associé :** ![Page Initiale](2.png "Premier screen")  
 
