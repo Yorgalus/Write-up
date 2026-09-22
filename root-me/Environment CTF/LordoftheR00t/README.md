@@ -226,7 +226,7 @@ cat .password
 
 Le contenu est :
 ```
-b420327d560bf5eac18330cd48e7dc45
+[FLAG CACHÉ]
 ```
 Et c'est notre flag
 
