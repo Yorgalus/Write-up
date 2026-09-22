@@ -53,12 +53,12 @@ Cela nous redirige vers une nouvelle page contenant trois icônes.
 
 En analysant à nouveau le code source de cette page, nous trouvons un fichier nommé :
 ```
-galerie/86hwnX2r/password.txt
+galerie/[FLAG CACHÉ]
 ```
 Cela semble être le fichier où est stocké le mot de passe recherché. Nous tentons donc d'y accéder directement via l'URL suivante :
 ```
 
-[http://challenge01.root-me.org/web-serveur/ch15/galerie/86hwnX2r/password.txt](http://challenge01.root-me.org/web-serveur/ch15/galerie/86hwnX2r/password.txt) 
+[http://challenge01.root-me.org/web-serveur/ch15/galerie/86hwnX2r/password.txt](http://challenge01.root-me.org/web-serveur/ch15/[FLAG CACHÉ]) 
 
 
 ```
