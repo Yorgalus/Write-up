@@ -42,7 +42,8 @@ On avance dans notre quête du Graal. ⚔️
 ```
 ### **Résultat : Le mot de passe enfin révélé**  
 Une pop-up surgit, dévoilant le **mot de passe magique** tant attendu :  
-🏅 **Mot de passe :** `786Osertk12`
+🏅 **Mot de passe :** `{FLAG CACHE}
+`
 
 ---
 
