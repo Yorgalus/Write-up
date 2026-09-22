@@ -42,7 +42,7 @@ Un petit clic et hop, on accède directement à :
 ### 4. Escalade dans les répertoires  
 Là, c'est la fête. On tente de remonter :  
 [http://challenge01.root-me.org:59092/assets../](http://challenge01.root-me.org:59092/assets../)  
-![Page flag](4.png "Dernier screen") 
+
 
 Et là, c’est Noël avant l'heure : **flag.txt** apparaît comme une oasis dans le désert.  
 
@@ -51,7 +51,7 @@ Et là, c’est Noël avant l'heure : **flag.txt** apparaît comme une oasis dan
 ### 5. Le flag  
 On saute dedans à pieds joints et voici le trésor tant attendu :  
 ```
-RM{4lias_M1sC0nf_HuRtS!}
+RM{[FLAG CACHÉ]}
 ```
 
 ## Conclusion  
