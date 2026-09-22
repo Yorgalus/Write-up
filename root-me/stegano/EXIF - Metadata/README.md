@@ -42,7 +42,7 @@ Utilisation des outils fournis par l'énoncé pour visualiser la position sur di
 Le mot de passe pour valider ce challenge est donc la ville où "pepo" se trouve :  
 - **Mot de passe :**  
 ```
-Marseille
+[FLAG CACHÉ]
 ```
 
 ---
