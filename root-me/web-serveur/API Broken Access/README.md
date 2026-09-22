@@ -51,5 +51,5 @@ L'objectif est de tester une API pour trouver une faille de type **Broken Access
 
 ## **Résultats**  
 - **Vulnérabilité exploitée :** Broken Access Control (manipulation du `user_id`).  
-- **Flag obtenu :**  RM{E4sy_1d0r_0n_API}
+- **Flag obtenu :**  RM{[FLAG CACHÉ]}
 
