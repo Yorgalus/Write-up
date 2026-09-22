@@ -28,7 +28,7 @@ Trouver le mot de passe en analysant le code source HTML de la page.
 - Le mot de passe est directement visible dans le code source.  
 - **Mot de passe récupéré :**  
 ```
-flag{123456azerty}
+flag{{FLAG CACHE}}
 ```
 
 ## **Résultats**  
