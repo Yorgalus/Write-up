@@ -38,7 +38,6 @@ Contourner la désactivation des boutons pour obtenir le flag.
 flag{[FLAG CACHÉ]}
 ```
 
-![Page flag](4.png "Dernier screen") 
 ---
 
 ## **Conclusion**  
