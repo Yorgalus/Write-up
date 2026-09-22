@@ -40,10 +40,10 @@ Cela vous indique qu'il existe un en-tête qui contrôle l'accès administrateur
 ---
 
 ## **Étape 4 : Modification de l'en-tête pour l'accès admin**  
-- Vous modifiez l'en-tête `Header-RootMe-Admin` pour y mettre la valeur `admin`.  
+- Vous modifiez l'en-tête `Header-RootMe-Admin` pour y mettre la valeur `[FLAG CACHÉ]`.  
 - Une fois la requête envoyée, le flag apparaît :  
 ```
-flag{HeadersMayBeUseful}
+flag{[FLAG CACHÉ]}
 ```
 
 - **Screen associé :** ![Page flag](3.png "Dernier screen")  
