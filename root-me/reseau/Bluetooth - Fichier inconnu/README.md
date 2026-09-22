@@ -43,5 +43,5 @@ Retrouvez les données normalement confidentielles contenues dans cette trame.
 ## **Flag du challenge**  
 Le flag du challenge est :  
 ```
-flag{0C:B3:19:B9:4F:C6}
+flag{[FLAG CACHÉ]}
 ```
