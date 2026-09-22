@@ -112,15 +112,14 @@ En réarrangeant les valeurs de la fin vers le début, la combinaison finale pou
 
 
 ```
-14 14 3 24 34 3 2 2
+[FLAG CACHÉ]
 ```
 
 En retirant les espaces, cela donne le **flag**  suivant :
 
 
 ```
-14143 2434322
-```
+[FLAG CACHÉ]```
 
 
 
