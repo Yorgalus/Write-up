@@ -67,7 +67,7 @@ Les verbes HTTP possibles incluent :
 
 ## **Étape 4 : Récupération du flag**  
 - **Flag affiché :**  
-Flag{a23e$dme96d3saez$$prap}
+Flag{a23e$dme96d3saez$$prap[FLAG CACHÉ]}
 
 - **Screen associé :** ![Page Initiale](3.png "Premier screen") 
 
